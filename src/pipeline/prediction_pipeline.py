@@ -13,8 +13,8 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
-            model_path = "/config/workspace/artifacts/model.pkl"
-            preprocessor_path = "/config/workspace/artifacts/preprocessor.pkl"
+            model_path = "G:\\100-days-of-dl\\Krish Naik\\FSDS Ineuron Course\\projects\\MLprojects\\artifacts\\model.pkl"
+            preprocessor_path = "G:\\100-days-of-dl\\Krish Naik\\FSDS Ineuron Course\\projects\\MLprojects\\artifacts\\preprocessor.pkl"
             model = load_object(file_path=model_path)
             preprocessor = load_object(file_path=preprocessor_path)
             data_scaled = preprocessor.transform(features)

@@ -29,7 +29,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             logging.info(f"Data Ingestion is started.")
-            df = pd.read_csv("/config/workspace/notebooks/data/stud.csv")
+            df = pd.read_csv("G:\\100-days-of-dl\\Krish Naik\\FSDS Ineuron Course\\projects\\MLprojects\\notebooks\\data\\stud.csv")
             logging.info(f"Read the data as dataframe")
 
             os.makedirs(os.path.dirname(self.data_ingestion_config.raw_data_path),exist_ok=True)
